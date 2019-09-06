@@ -43,5 +43,6 @@ VOLUME "$SONARQUBE_HOME/data"
 
 WORKDIR $SONARQUBE_HOME
 COPY run.sh $SONARQUBE_HOME/bin/
+RUN chmod 755 $SONARQUBE_HOME/bin/run.sh
 USER sonarqube
-ENTRYPOINT ["./bin/run.sh"]
+ENTRYPOINT ["/bin/bash","-c","/opt/sonarqube/bin/run.sh"]
