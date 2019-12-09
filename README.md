@@ -16,8 +16,8 @@ The image contains two files:
 DockerHub automatically build and push the Docker Image by Tag. 
 To create another Image from a new Tag version.
 
-  * Verify change run.sh and Dockerfile from community edition 
-  * Update run.sh and Dockerfile accordinlgy
+  * Verify change run.sh and DockerFile from community edition 
+  * Update run.sh and DockerFile accordinlgy
   * Test 
   * Push change with new tag version
 
@@ -37,6 +37,7 @@ By example, by hosting Sonarqube on Kubernetes, the JDBC URL will be your postgr
 
 
 ### Upgrade 
+
 
 As mentionned in the documentation, perform first a backup of your database and then change the Image version of your container.
 Then connect to the Sonarqube: https://sonarqube.test.com/setup, and perform the database migration as requested in the web page.
